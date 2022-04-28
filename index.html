@@ -29,8 +29,13 @@
     const slide2 = document.querySelector(".slide2");
     window.addEventListener("mousemove", (e) => {
       const x = e.clientX;
-      slide1.style.right = window.innerWidth - x + 'px';
+      const winWidth = window.innerWidth;
       slide2.style.left = x + 'px';
+      slide1.style.right = winWidth - x + 'px';
+      const textOpacity1 = x / (winWidth / 2);
+      const textOpacity2 = (winWidth - x) / (winWidth / 2);
+      slide1.style.setProperty('--opacity', textOpacity1);
+      slide2.style.setProperty('--opacity', textOpacity2);
     });
   </script>
 </body>
