@@ -25,9 +25,11 @@
     </div>
   </div>
   <script>
+    const slide1 = document.querySelector(".slide1");
     const slide2 = document.querySelector(".slide2");
     window.addEventListener("mousemove", (e) => {
       const x = e.clientX;
+      slide1.style.right = window.innerWidth - x + 'px';
       slide2.style.left = x + 'px';
     });
   </script>

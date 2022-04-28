@@ -14,20 +14,19 @@
   background-size: cover;
 }
 
-
 .slide1 {
-  background: url(./red2.webp) no-repeat;
+  background: url(./red2.webp) no-repeat rgba(255, 0, 0, 0.1);
+  right: 0;
 }
 
 .slide2 {
-  background: url(./blue2.webp) no-repeat;
+  background: url(./blue2.webp) no-repeat rgba(81, 110, 255, 0.1);
   left: 50%;
 }
 
 .slide {
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background-attachment: fixed;
