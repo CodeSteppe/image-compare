@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url(./bg.webp) no-repeat;
+  background-size: cover;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.desc {
+  color: #fff;
+  position: fixed;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+}
+
+.slide1 {
+  background: url(./red2.webp) no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.slide1 .desc {
+  top: 10vh;
+  left: 5vw;
+}
+.slide2 .desc {
+  bottom: 10vh;
+  right: 5vw;
+}
+
+.desc h2 {
+  font-size: 48px;
+}
+
+.slide2 {
+  background: url(./blue2.webp) no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  left: 50%;
+}
