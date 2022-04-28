@@ -14,12 +14,24 @@
   background-size: cover;
 }
 
+
+.slide1 {
+  background: url(./red2.webp) no-repeat;
+}
+
+.slide2 {
+  background: url(./blue2.webp) no-repeat;
+  left: 50%;
+}
+
 .slide {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .desc {
@@ -27,12 +39,6 @@
   position: fixed;
   text-align: center;
   font-family: "Anton", sans-serif;
-}
-
-.slide1 {
-  background: url(./red2.webp) no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 
 .slide1 .desc {
@@ -50,11 +56,4 @@
 
 .desc p {
   font-size: 24px;
-}
-
-.slide2 {
-  background: url(./blue2.webp) no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  left: 50%;
 }
