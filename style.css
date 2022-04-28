@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -12,12 +13,12 @@
   overflow: hidden;
   background: url(./bg.webp) no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .slide1 {
   background: url(./red.webp) no-repeat rgba(255, 0, 0, 0.1);
-  right: 0;
-  z-index: 1;
+  right: 50%;
 }
 
 .slide2 {
@@ -27,7 +28,6 @@
 
 .slide {
   position: absolute;
-  top: 0;
   width: 100%;
   height: 100%;
   background-attachment: fixed;
@@ -38,7 +38,7 @@
   color: #fff;
   position: fixed;
   text-align: center;
-  font-family: "Anton", sans-serif;
+  font-family: "Anton";
 }
 
 .slide1 .desc {
@@ -46,6 +46,7 @@
   left: 5vw;
   opacity: var(--opacity);
 }
+
 .slide2 .desc {
   bottom: 10vh;
   right: 5vw;
@@ -53,9 +54,9 @@
 }
 
 .desc h2 {
-  font-size: 48px;
+  font-size: 8vh;
 }
 
 .desc p {
-  font-size: 24px;
+  font-size: 4vh;
 }

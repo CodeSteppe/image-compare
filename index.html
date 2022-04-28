@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Image Slide Compare</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -24,14 +24,15 @@
       </div>
     </div>
   </div>
+
   <script>
-    const slide1 = document.querySelector(".slide1");
-    const slide2 = document.querySelector(".slide2");
-    window.addEventListener("mousemove", (e) => {
+    const slide1 = document.querySelector('.slide1');
+    const slide2 = document.querySelector('.slide2');
+    window.addEventListener("mousemove", e => {
       const x = e.clientX;
       const winWidth = window.innerWidth;
-      slide2.style.left = x + 'px';
       slide1.style.right = winWidth - x + 'px';
+      slide2.style.left = x + 'px';
       const textOpacity1 = x / (winWidth / 2);
       const textOpacity2 = (winWidth - x) / (winWidth / 2);
       slide1.style.setProperty('--opacity', textOpacity1);
