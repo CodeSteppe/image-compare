@@ -15,13 +15,13 @@
 }
 
 .slide1 {
-  background: url(./red2.webp) no-repeat rgba(255, 0, 0, 0.1);
+  background: url(./red.webp) no-repeat rgba(255, 0, 0, 0.1);
   right: 0;
   z-index: 1;
 }
 
 .slide2 {
-  background: url(./blue2.webp) no-repeat rgba(81, 110, 255, 0.1);
+  background: url(./blue.webp) no-repeat rgba(81, 110, 255, 0.1);
   left: 50%;
 }
 
