@@ -48,6 +48,10 @@
   font-size: 48px;
 }
 
+.desc p {
+  font-size: 24px;
+}
+
 .slide2 {
   background: url(./blue2.webp) no-repeat;
   background-attachment: fixed;
